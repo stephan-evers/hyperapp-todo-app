@@ -1,0 +1,32 @@
+{
+  "name": "foobar",
+  "version": "0.0.1",
+  "main": "server/index.js",
+  "private": true,
+  "scripts": {
+    "dev": "parcel app/index.pug",
+    "clean": "rm -rf ./dist",
+    "watch": "parcel watch app/index.pug",
+    "build": "./node_modules/.bin/babel-node build.js",
+    "now-build": "yarn run build",
+    "deploy": "yarn run clean && yarn run build && now"
+  },
+  "dependencies": {
+    "hyperapp": "^1.2.9",
+    "@hyperapp/router": "0.7.1",
+    "lodash": "^4.17.11",
+    "marked": "^0.6.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "parcel-bundler": "^1.11.0",
+    "posthtml-inline-assets": "^3.0.0",
+    "rimraf": "^2.6.3",
+    "pug": "^2.0.3",
+    "stylus": "^0.54.5"
+  }
+}

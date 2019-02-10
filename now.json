@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "name": "foobar",
+    "builds": [{ "src": "package.json", "use": "@now/static-build" }],
+    "routes": [
+      { "src": "(.*\\.css)", "headers": {"cache-control": "max-age=2592000"}, "dest": "$1"},
+      { "src": "(.*\\.js)", "headers": {"cache-control": "max-age=2592000"}, "dest": "$1"},
+      { "src": "(.*\\.map)", "headers": {"cache-control": "max-age=2592000"}, "dest": "$1"},
+      { "src": ".*", "dest": "/index.html" }
+    ]
+}

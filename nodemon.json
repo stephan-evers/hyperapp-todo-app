@@ -1,0 +1,21 @@
+{
+  "ignore": [
+    ".git",
+    ".gitignore",
+    "yarn.lock",
+    "README.md",
+    "now.json",
+    "node_modules/"
+  ],
+  "watch": [
+    "package.json",
+    "dist/",
+    "server/"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "execMap": {
+    "js": "./node_modules/.bin/babel-node"
+  }
+}
