@@ -1,5 +1,5 @@
 {
-  "name": "foobar",
+  "name": "hyperapp-todo-app",
   "version": "0.0.1",
   "main": "server/index.js",
   "private": true,

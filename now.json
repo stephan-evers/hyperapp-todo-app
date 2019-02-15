@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "foobar",
+    "name": "hyperapp-todo-app",
     "builds": [{ "src": "package.json", "use": "@now/static-build" }],
     "routes": [
       { "src": "(.*\\.css)", "headers": {"cache-control": "max-age=2592000"}, "dest": "$1"},

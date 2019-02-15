@@ -1,4 +1,4 @@
-# foobar
+# hyperapp-todo-app
 
 > Auto-generated with @evers/create-app
 
@@ -11,10 +11,6 @@ $ yarn install
 # serve with hot reload at localhost:3000
 $ yarn run dev
 
-# build for production and launch server
+# build for production
 $ yarn run build
-$ yarn start
-
-# generate static project
-$ yarn run generate
 ```
