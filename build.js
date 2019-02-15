@@ -39,7 +39,7 @@ async function build(bundler) {
         posthtmlInlineAssets({
           cwd: outDir,
           transforms: {
-            script: false
+            // script: false
           }
         })
       ])
@@ -47,6 +47,7 @@ async function build(bundler) {
 
     await writeFile(path.join(outDir, outFile), result.html, 'utf-8')
     await clearPath(`${outDir}/*.css`)
+    await clearPath(`${outDir}/main.*.js`)
   } catch (error) {
     return console.error(error)
   }
